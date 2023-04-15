@@ -1,0 +1,87 @@
+.nav-bar {
+  background-color: #272727;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+}
+.nav-options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding: 6px;
+}
+.app-logo {
+  width: 130px;
+}
+.desktop-options-container {
+  display: none;
+}
+.link-item {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header {
+  list-style: none;
+  margin-right: 20px;
+  font-weight: 450;
+  font-size: 19px;
+}
+.desktop-logout-btn {
+  display: none;
+  background-color: #4f46e5;
+  color: #ffffff;
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  border-radius: 5px;
+}
+.icon-item {
+  list-style: none;
+  margin-right: 25px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.mobile-options-container {
+  display: flex;
+}
+.mobile-logout-btn {
+  background-color: transparent;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+}
+.logout-icon {
+  width: 27px;
+  height: 27px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-logout-btn {
+    display: none;
+  }
+  .mobile-options-container {
+    display: none;
+  }
+  .desktop-options-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  .desktop-logout-btn {
+    display: block;
+  }
+  .app-logo {
+    width: 150px;
+  }
+}
